@@ -3,12 +3,8 @@
     "",
     "\\invencivelAPIoficial",
     "\\invencivelAPIoficial\\obj",
-    "\\invencivelAPIoficial\\obj\\Debug",
-    "\\invencivelAPIoficial\\obj\\Debug\\net9.0",
-    "\\invencivelAPIoficial\\obj\\Debug\\net9.0\\ref",
-    "\\invencivelAPIoficial\\obj\\Debug\\net9.0\\refint",
-    "\\invencivelAPIoficial\\Properties"
+    "\\invencivelAPIoficial\\obj\\Release"
   ],
-  "SelectedNode": "\\invencivelAPIoficial\\obj\\Debug\\net9.0\\invencivelAPIoficial.AssemblyInfo.cs",
+  "SelectedNode": "\\invencivelAPIoficial\\obj\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
