@@ -6,8 +6,8 @@ WORKDIR /src
 COPY . .
 
 # Restaura dependências e compila
-RUN dotnet restore "invencivelAPIoficial/invencivelAPI.sln"
-RUN dotnet publish "invencivelAPIoficial/invencivelAPI.sln" -c Release -o /app/publish
+RUN dotnet restore "invencivelAPIoficial/invencivelAPIoficial.sln"
+RUN dotnet publish "invencivelAPIoficial/invencivelAPIoficial.sln" -c Release -o /app/publish
 
 # Etapa 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
