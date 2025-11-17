@@ -11,12 +11,14 @@ phases:
     commands:
       - echo "==== RESTAURANDO PACOTES ===="
       - cd invencivelAPIoficial
-      - dotnet restore
+      - ls -la
+      - dotnet restore invencivelAPIoficial.csproj
 
   build:
     commands:
       - echo "==== COMPILANDO A APLICAÇÃO ===="
-      - dotnet build --configuration Release
+      - dotnet build  invencivelAPIoficial/invencivelAPIoficial.csproj --configuration Release
+      - cd ..
       - echo "==== CRIANDO IMAGEM DOCKER ===="
       - docker build -t invencivelapi:latest .
 
