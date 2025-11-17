@@ -12,21 +12,17 @@ phases:
       - echo "==== RESTAURANDO PACOTES ===="
       - cd invencivelAPIoficial
       - ls -la
-      - dotnet restore invencivelAPIoficial/invencivelAPIoficial.csproj
+      - dotnet restore invencivelAPIoficial.csproj  # CORRIGIDO
 
   build:
     commands:
       - echo "==== COMPILANDO A APLICAÇÃO ===="
-      - dotnet build  invencivelAPIoficial/invencivelAPIoficial.csproj --configuration Release
+      - dotnet build invencivelAPIoficial.csproj --configuration Release  # CORRIGIDO
       - cd ..
       - echo "==== CRIANDO IMAGEM DOCKER ===="
-      - docker build -t invencivelapi:latest .
+      - docker build -t invencivelapi:latest .  # Builda da raiz onde está o Dockerfile
 
   post_build:
     commands:
       - echo "==== BUILD FINALIZADO COM SUCESSO ===="
       - docker images
-
-artifacts:
-  files:
-    - '**/*'
