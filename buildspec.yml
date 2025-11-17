@@ -4,6 +4,8 @@ phases:
   install:
     commands:
       - echo "==== INSTALANDO DEPENDÊNCIAS ===="
+      - export HOME=/root
+      - export DOTNET_CLI_HOME=/tmp/dotnet
       - dotnet --version
       - docker --version
 
@@ -12,17 +14,21 @@ phases:
       - echo "==== RESTAURANDO PACOTES ===="
       - cd invencivelAPIoficial
       - ls -la
-      - dotnet restore invencivelAPIoficial.csproj  # CORRIGIDO
+      - dotnet restore invencivelAPIoficial.csproj
 
   build:
     commands:
       - echo "==== COMPILANDO A APLICAÇÃO ===="
-      - dotnet build invencivelAPIoficial.csproj --configuration Release  # CORRIGIDO
+      - dotnet build invencivelAPIoficial.csproj --configuration Release --no-restore
       - cd ..
       - echo "==== CRIANDO IMAGEM DOCKER ===="
-      - docker build -t invencivelapi:latest .  # Builda da raiz onde está o Dockerfile
+      - docker build -t invencivelapi:latest .
 
   post_build:
     commands:
       - echo "==== BUILD FINALIZADO COM SUCESSO ===="
       - docker images
+
+artifacts:
+  files:
+    - '**/*'
