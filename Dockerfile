@@ -1,23 +1,4 @@
-# Etapa 1: Build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-
-# Copia tudo
-COPY . .
-
-# Restaura dependências e compila
-RUN dotnet restore "invencivelAPIoficial/invencivelAPIoficial.sln"
-RUN dotnet publish "invencivelAPIoficial/invencivelAPIoficial.sln" -c Release -o /app/publish
-
-# Etapa 2: Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-
-# Copia os arquivos publicados
-COPY --from=build /app/publish .
-
-# Expõe a porta padrão da API
-EXPOSE 8080
-
-# Define o comando de inicialização
-ENTRYPOINT ["dotnet", "invencivelAPI.dll"]
+COPY ./output .
+ENTRYPOINT ["dotnet", "invencivelAPIoficial.dll"]
