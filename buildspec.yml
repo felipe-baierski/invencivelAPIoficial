@@ -12,7 +12,7 @@ phases:
       - echo "==== RESTAURANDO PACOTES ===="
       - cd invencivelAPIoficial
       - ls -la
-      - dotnet restore invencivelAPIoficial.csproj
+      - dotnet restore invencivelAPIoficial/invencivelAPIoficial.csproj
 
   build:
     commands:
