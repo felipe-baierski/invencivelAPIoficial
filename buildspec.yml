@@ -2,37 +2,29 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      docker: 20
     commands:
       - echo "==== INSTALANDO DEPENDÊNCIAS ===="
-      - apt-get update -y
-      - apt-get install -y jq
+      - dotnet --version
+      - docker --version
 
   pre_build:
     commands:
-      - echo "==== FAZENDO LOGIN NO ECR ===="
-      - aws --version
-      - ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-      - REGION="us-east-1"
-      - REPO_NAME="invencivelapi"
-      - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-      - ECR_URI="$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME"
-      - aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $ECR_URI
-      - echo "IMAGE_TAG=$IMAGE_TAG"
+      - echo "==== RESTAURANDO PACOTES ===="
+      - cd invencivelAPIoficial
+      - dotnet restore
 
   build:
     commands:
-      - echo "==== BUILDANDO IMAGEM DO DOCKER ===="
-      - docker build -t $ECR_URI:$IMAGE_TAG -f Dockerfile .
+      - echo "==== COMPILANDO A APLICAÇÃO ===="
+      - dotnet build --configuration Release
+      - echo "==== CRIANDO IMAGEM DOCKER ===="
+      - docker build -t invencivelapi:latest .
 
   post_build:
     commands:
-      - echo "==== ENVIANDO IMAGEM PARA O ECR ===="
-      - docker push $ECR_URI:$IMAGE_TAG
-      - echo "Criando arquivo imagedefinitions.json"
-      - printf '[{"name":"invencivelapi","imageUri":"%s"}]' $ECR_URI:$IMAGE_TAG > imagedefinitions.json
+      - echo "==== BUILD FINALIZADO COM SUCESSO ===="
+      - docker images
 
 artifacts:
   files:
-    - imagedefinitions.json
+    - '**/*'
