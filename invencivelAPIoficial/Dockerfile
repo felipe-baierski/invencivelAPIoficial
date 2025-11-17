@@ -5,7 +5,7 @@ WORKDIR /src
 # Copia tudo
 COPY . .
 
-# Restaura dependências e compila
+# Restaura dependÃªncias e compila
 RUN dotnet restore "invencivelAPI.sln"
 RUN dotnet publish "invencivelAPI.sln" -c Release -o /app/publish
 
@@ -16,8 +16,8 @@ WORKDIR /app
 # Copia os arquivos publicados
 COPY --from=build /app/publish .
 
-# Expõe a porta padrão da API
+# ExpÃµe a porta padrÃ£o da API
 EXPOSE 8080
 
-# Define o comando de inicialização
+# Define o comando de inicializaÃ§Ã£o
 ENTRYPOINT ["dotnet", "invencivelAPI.dll"]
