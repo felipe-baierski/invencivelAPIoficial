@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\models\\imprevisto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\models\\imprevisto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\models\\trem_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\models\\trem_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\models\\trem_eficiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\models\\trem_eficiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|c:\\users\\sbaie\\source\\repos\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\invencivelapioficial\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9602CD-2C8E-403B-9368-04D020E8703C}|invencivelAPIoficial\\invencivelAPIoficial.csproj|solutionrelative:invencivelapioficial\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Trem_Eficiencia.cs",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Trem_Eficiencia.cs",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Models\\Trem_Eficiencia.cs",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Trem_Eficiencia.cs",
+              "RelativeToolTip": "invencivelAPIoficial\\Models\\Trem_Eficiencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:04:39.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Usuario.cs",
+              "RelativeToolTip": "invencivelAPIoficial\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:59:04.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Imprevisto.cs",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Imprevisto.cs",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Models\\Imprevisto.cs",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Imprevisto.cs",
+              "RelativeToolTip": "invencivelAPIoficial\\Models\\Imprevisto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:26:08.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Trem_Status.cs",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Trem_Status.cs",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Models\\Trem_Status.cs",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Models\\Trem_Status.cs",
+              "RelativeToolTip": "invencivelAPIoficial\\Models\\Trem_Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:59:47.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\appsettings.json",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\appsettings.json",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\appsettings.json",
+              "RelativeToolTip": "invencivelAPIoficial\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:27:30.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Program.cs",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Program.cs",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Program.cs*",
+              "RelativeToolTip": "invencivelAPIoficial\\Program.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwB4AAAC0BQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:27:16.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\Properties\\launchSettings.json",
+              "RelativeToolTip": "invencivelAPIoficial\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:27:34.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "invencivelAPIoficial\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\sbaie\\source\\repos\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial\\appsettings.Development.json",
+              "RelativeToolTip": "invencivelAPIoficial\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:27:43.341Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
