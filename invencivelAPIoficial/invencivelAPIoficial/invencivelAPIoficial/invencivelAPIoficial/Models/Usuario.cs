@@ -5,9 +5,9 @@ namespace invencivelAPIoficial.Models
     [Table("Usuario")]
     public class Usuario
     {
-        public int Usuario_id { get; set; }
-        public string Usuario_nome { get; set; }
-        public string Usuario_email { get; set; }
-        public string Usuario_senha { get; set; }
+        public int UsuarioId { get; set; }
+        public string Usuariocol { get; set; }
+        public string UsuarioEmail { get; set; }
+        public string UsuarioSenha { get; set; }
     }
 }

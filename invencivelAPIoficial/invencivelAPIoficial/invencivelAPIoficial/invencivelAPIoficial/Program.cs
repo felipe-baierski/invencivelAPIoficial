@@ -1,4 +1,8 @@
+using invencivelAPIoficial;
+using invencivelAPIoficial.Services;
+using Microsoft.Data.SqlClient;
 using MySqlConnector;
+using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,12 +13,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddSingleton<IDbConnection>(sp =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    var connectionString = config.GetConnectionString("DefaultConnection");
+
+    return new MySqlConnection(connectionString);
+});
+
+
+builder.Services.AddScoped<UsuarioInterface, UsuarioService>();
+
 var app = builder.Build();
-
-builder.Services.AddTransient<MySqlConnection>(_ =>
-    new MySqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

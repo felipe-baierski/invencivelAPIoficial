@@ -2,6 +2,6 @@
 {
     public interface UsuarioInterface
     {
-        public void CadastrarUsuario(string nome, string email, string senha);
+        public Task<bool> CadastrarUsuario(string nome, string email, string senha);
     }
 }
