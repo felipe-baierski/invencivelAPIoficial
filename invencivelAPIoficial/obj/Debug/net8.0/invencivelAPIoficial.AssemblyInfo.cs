@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("invencivelAPIoficial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4170f0b001cfe8326c2dc08cd4514af26b808cfc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5783275139723f7b7c92d82daf7790feda16545d")]
 [assembly: System.Reflection.AssemblyProductAttribute("invencivelAPIoficial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("invencivelAPIoficial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
