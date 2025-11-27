@@ -20,6 +20,8 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(5000); // escuta todas as interfaces na porta 5000
 });
 
+builder.WebHost.UseKestrel()
+    .UseUrls("http://0.0.0.0:5000");
 
 builder.Services.AddSingleton<IDbConnection>(sp =>
 {
