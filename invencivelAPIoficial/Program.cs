@@ -13,9 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
+
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(5000); // escuta todas as interfaces na porta 80
+    options.ListenAnyIP(5000); // escuta todas as interfaces na porta 5000
 });
 
 
