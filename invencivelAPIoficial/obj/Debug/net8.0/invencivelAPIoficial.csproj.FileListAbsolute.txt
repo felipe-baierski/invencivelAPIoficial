@@ -84,7 +84,6 @@ C:\Users\sbaie\source\repos\invencivelAPIoficial\invencivelAPIoficial\invencivel
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\appsettings.json
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\appsettings.configuration.Development.json
-C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\appsettings.configuration.json
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\invencivelAPIoficial.staticwebassets.endpoints.json
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\invencivelAPIoficial.exe
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\bin\Debug\net8.0\invencivelAPIoficial.deps.json
@@ -159,10 +158,10 @@ C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPI
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\invenciv.B5458706.Up2Date
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\invencivelAPIoficial.dll
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\refint\invencivelAPIoficial.dll
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\invencivelAPIoficial.pdb
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\invencivelAPIoficial.genruntimeconfig.cache
 C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\ref\invencivelAPIoficial.dll
+C:\Users\sbaie\OneDrive\Documentos\Projetos\projeto_api_invencivel\invencivelAPIoficial\invencivelAPIoficial\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -14,6 +14,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.WebHost.UseUrls("http://0.0.0.0:80");
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80); // escuta todas as interfaces na porta 80
+});
+
 
 builder.Services.AddSingleton<IDbConnection>(sp =>
 {
