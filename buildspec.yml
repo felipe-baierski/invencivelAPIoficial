@@ -8,6 +8,8 @@ phases:
   install:
     commands:
       - echo "Instalando dependencias do .NET..."
+      - export HOME=/root
+      - export DOTNET_CLI_HOME=/root
       - wget https://dot.net/v1/dotnet-install.sh
       - bash dotnet-install.sh --channel 8.0 --install-dir /usr/share/dotnet
       - export PATH="$PATH:/usr/share/dotnet"
