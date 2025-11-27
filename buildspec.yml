@@ -2,19 +2,20 @@ version: "0.2"
 
 env:
   variables:
-    ImageName: invencivelapi
+    ImageName: invencivelapioficial
 
 phases:
   install:
     commands:
       - echo "Instalando dependencias do .NET..."
+      - export HOME=/root
+      - export DOTNET_CLI_HOME=/root
       - wget https://dot.net/v1/dotnet-install.sh
       - bash dotnet-install.sh --channel 8.0 --install-dir /usr/share/dotnet
       - export PATH="$PATH:/usr/share/dotnet"
       - dotnet --info
-      - ls -R
       - dotnet nuget locals all --clear
-      - dotnet restore "invencivelAPIoficial.csproj" --verbosity detailed
+      - dotnet restore "invencivelAPIoficial/invencivelAPIoficial.csproj"
 
   pre_build:
     commands:
@@ -23,10 +24,14 @@ phases:
 
   build:
     commands:
+      - echo "Limpando pasta publish..."
+      - rm -rf ./publish
       - echo "Compilando aplicacao .NET..."
-      - dotnet publish "invencivelAPIoficial.csproj" -c Release -o ./output
+      - dotnet publish "invencivelAPIoficial/invencivelAPIoficial.csproj" -c Release -o ./publish
+      - echo "Conteúdo após o publish:"
+      - ls -R .
       - echo "Construindo imagem Docker..."
-      - docker build -t $ImageName -f ./Dockerfile ./output
+      - docker build -t $ImageName .
       - docker images
 
   post_build:
