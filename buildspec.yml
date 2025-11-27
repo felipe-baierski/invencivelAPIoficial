@@ -2,7 +2,7 @@ version: "0.2"
 
 env:
   variables:
-    ImageName: invencivelAPIoficial
+    ImageName: invencivelapioficial
 
 phases:
   install:
