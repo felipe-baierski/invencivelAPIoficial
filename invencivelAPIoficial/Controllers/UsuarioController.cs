@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using invencivelAPIoficial.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace invencivelAPIoficial.Controllers
 {
@@ -14,19 +15,19 @@ namespace invencivelAPIoficial.Controllers
             this.usuarioInterface = usuarioInterface;
         }
         [HttpPost]
-        public IActionResult CadastrarUsuario(string Nome, string email, string senha)
+        public IActionResult CadastrarUsuario([FromBody]Usuario usuario)
         {
-            var cadastroSucesso = usuarioInterface.CadastrarUsuario(Nome, email, senha);
+            var cadastroSucesso = usuarioInterface.CadastrarUsuario(usuario.Usuariocol, usuario.UsuarioEmail, usuario.UsuarioSenha);
 
 
 
             if (cadastroSucesso.Result)
             {
-                return Ok();
+                return Ok(new { mensagem = "Usuário cadastrado com sucesso!" });
             }
             else
             {
-                return BadRequest();
+                return Ok(new { mensagem = "Usuário não cadastrado" });
             }
 
         }
