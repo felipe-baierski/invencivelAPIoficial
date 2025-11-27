@@ -28,7 +28,7 @@ phases:
       - echo "Compilando aplicacao .NET..."
       - dotnet publish "invencivelAPIoficial/invencivelAPIoficial.csproj" -c Release -o ./output
       - echo "Construindo imagem Docker..."
-      - docker build -t $ImageName -f ./Dockerfile ./output
+      - docker build -t $ImageName -f Dockerfile .
       - docker images
 
   post_build:
