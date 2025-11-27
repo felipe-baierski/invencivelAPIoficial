@@ -28,6 +28,8 @@ phases:
       - rm -rf ./publish
       - echo "Compilando aplicacao .NET..."
       - dotnet publish "invencivelAPIoficial/invencivelAPIoficial.csproj" -c Release -o ./publish
+      - echo "Conteúdo após o publish:"
+      - ls -R .
       - echo "Construindo imagem Docker..."
       - docker build -t $ImageName .
       - docker images
