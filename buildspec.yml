@@ -7,7 +7,7 @@ env:
 phases:
   install:
     commands:
-      - echo "Instalando dependências do .NET..."
+      - echo "Instalando dependencias do .NET..."
       - wget https://dot.net/v1/dotnet-install.sh
       - bash dotnet-install.sh --channel 8.0 --install-dir /usr/share/dotnet
       - export PATH="$PATH:/usr/share/dotnet"
@@ -23,7 +23,7 @@ phases:
 
   build:
     commands:
-      - echo "Compilando aplicação .NET..."
+      - echo "Compilando aplicacao .NET..."
       - dotnet publish "invencivelAPIoficial.csproj" -c Release -o ./output
       - echo "Construindo imagem Docker..."
       - docker build -t $ImageName -f ./Dockerfile ./output
