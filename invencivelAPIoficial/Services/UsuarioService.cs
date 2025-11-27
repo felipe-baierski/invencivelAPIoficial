@@ -14,10 +14,9 @@ namespace invencivelAPIoficial.Services
         }
         public async Task<bool> CadastrarUsuario(string nome, string email, string senha)
         {
+            string sql = "INSERT INTO Usuario (UsuarioNome, UsuarioEmail, UsuarioSenha) VALUES (@Nome, @Email, @Senha)";
 
-            string sql = "INSERT INTO Usuario (Usuariocol, UsuarioEmail, UsuarioSenha) VALUES (@Nome, @Email, @Senha)";
-
-            return await _db.ExecuteAsync(sql, new { Nome = nome, Email = email, Senha = senha }) > 0;
+            return await _db.ExecuteAsync(sql, new {Nome = nome, Email = email, Senha = senha}) > 0;
         }
     }
 }

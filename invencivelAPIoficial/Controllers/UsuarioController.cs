@@ -16,9 +16,11 @@ namespace invencivelAPIoficial.Controllers
             this.usuarioInterface = usuarioInterface;
         }
         [HttpPost]
-        public async Task<IActionResult> CadastrarUsuario([FromBody]Usuario usuario)
+        public async Task<IActionResult> CadastrarUsuario([FromBody]LoginRequest usuario)
         {
-            var cadastroSucesso = await usuarioInterface.CadastrarUsuario(usuario.Usuariocol, usuario.UsuarioEmail, usuario.UsuarioSenha);
+
+
+            var cadastroSucesso = await usuarioInterface.CadastrarUsuario(usuario.UsuarioNome, usuario.UsuarioEmail, usuario.UsuarioSenha);
 
 
 
