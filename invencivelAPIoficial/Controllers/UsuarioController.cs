@@ -1,5 +1,6 @@
 ﻿using invencivelAPIoficial.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace invencivelAPIoficial.Controllers
 {
@@ -15,13 +16,13 @@ namespace invencivelAPIoficial.Controllers
             this.usuarioInterface = usuarioInterface;
         }
         [HttpPost]
-        public IActionResult CadastrarUsuario([FromBody]Usuario usuario)
+        public async Task<IActionResult> CadastrarUsuario([FromBody]Usuario usuario)
         {
-            var cadastroSucesso = usuarioInterface.CadastrarUsuario(usuario.Usuariocol, usuario.UsuarioEmail, usuario.UsuarioSenha);
+            var cadastroSucesso = await usuarioInterface.CadastrarUsuario(usuario.Usuariocol, usuario.UsuarioEmail, usuario.UsuarioSenha);
 
 
 
-            if (cadastroSucesso.Result)
+            if (cadastroSucesso)
             {
                 return Ok(new { mensagem = "Usuário cadastrado com sucesso!" });
             }
