@@ -2122,11 +2122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\dnv\\invencivelAPIoficial\\invencivelAPIoficial.csproj",
+      "projectUniqueName": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial.csproj",
       "projectName": "invencivelAPIoficial",
-      "projectPath": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\dnv\\invencivelAPIoficial\\invencivelAPIoficial.csproj",
+      "projectPath": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\invencivelAPIoficial\\invencivelAPIoficial.csproj",
       "packagesPath": "C:\\Users\\sbaie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\dnv\\invencivelAPIoficial\\obj\\",
+      "outputPath": "C:\\Users\\sbaie\\OneDrive\\Documentos\\Projetos\\projeto_api_invencivel\\invencivelAPIoficial\\invencivelAPIoficial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
