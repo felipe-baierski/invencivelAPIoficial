@@ -1,4 +1,4 @@
-@invencivelAPIoficial_HostAddress = http://localhost:5045
+@invencivelAPIoficial_HostAddress = http://localhost:5002
 
 GET {{invencivelAPIoficial_HostAddress}}/weatherforecast/
 Accept: application/json
