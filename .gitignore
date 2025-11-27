@@ -1,3 +1,4 @@
 # Ignorar appsettings
 invencivelAPIoficial/appsettings.json
 invencivelAPIoficial/appsettings.*.json
+invencivelAPIoficial/appsettings.configuration.Development.json
