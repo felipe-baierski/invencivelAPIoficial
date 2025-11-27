@@ -16,7 +16,7 @@ phases:
       - dotnet --info
       - ls -R
       - dotnet nuget locals all --clear
-      - dotnet restore "invencivelAPIoficial.csproj" --verbosity detailed
+      - dotnet restore "invencivelAPIoficial/invencivelAPIoficial.csproj" --verbosity detailed
 
   pre_build:
     commands:
@@ -26,7 +26,7 @@ phases:
   build:
     commands:
       - echo "Compilando aplicacao .NET..."
-      - dotnet publish "invencivelAPIoficial.csproj" -c Release -o ./output
+      - dotnet publish "invencivelAPIoficial/invencivelAPIoficial.csproj" -c Release -o ./output
       - echo "Construindo imagem Docker..."
       - docker build -t $ImageName -f ./Dockerfile ./output
       - docker images
