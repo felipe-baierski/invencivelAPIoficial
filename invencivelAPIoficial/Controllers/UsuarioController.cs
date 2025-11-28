@@ -39,5 +39,19 @@ namespace invencivelAPIoficial.Controllers
             return Ok(usuarios);
         }
 
+        [HttpGet("Login")]
+        public async Task<IActionResult> LoginUsuario([FromBody] LoginRequest usuario)
+        {
+            var loginSucesso = await usuarioInterface.LoginUsuario(usuario.UsuarioEmail, usuario.UsuarioSenha, usuario.UsuarioNome );
+            if (loginSucesso)
+            {
+                return Ok(new { mensagem = "Login bem-sucedido!" });
+            }
+            else
+            {
+                return Ok(new { mensagem = "Credenciais inválidas." });
+            }
+        }
+
     }
 }

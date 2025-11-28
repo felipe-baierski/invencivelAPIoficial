@@ -30,6 +30,20 @@ namespace invencivelAPIoficial.Services
             return await _db.ExecuteAsync(insertSql, new {Nome = nome, Email = email, Senha = senha}) > 0;
         }
 
+        public async Task<bool> LoginUsuario(string email, string senha, string nome)
+        {
+            string sql = "SELECT * FROM Usuario WHERE UsuarioEmail = @Email AND UsuarioSenha = @Senha AND UsuarioNome = @Nome";
+
+            var Query = await _db.QueryAsync<Usuario>(sql, new {Email = email, Senha = senha, Nome = nome});
+
+            if (Query.Count() == 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public async Task<IEnumerable<Usuario>> ObterTodosUsuarios()
         {
             string sql = "SELECT * FROM Usuario";
