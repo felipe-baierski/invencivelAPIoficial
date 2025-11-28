@@ -31,6 +31,7 @@ builder.Services.AddSingleton<IDbConnection>(sp =>
     return new MySqlConnection(connectionString);
 });
 
+builder.Services.AddScoped<TremInterface, TremService>();
 
 builder.Services.AddScoped<UsuarioInterface, UsuarioService>();
 
