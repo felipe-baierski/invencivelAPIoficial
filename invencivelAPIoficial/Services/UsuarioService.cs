@@ -1,5 +1,6 @@
 ﻿
 using Dapper;
+using invencivelAPIoficial.Models;
 using System.Data;
 
 namespace invencivelAPIoficial.Services
@@ -14,9 +15,28 @@ namespace invencivelAPIoficial.Services
         }
         public async Task<bool> CadastrarUsuario(string nome, string email, string senha)
         {
-            string sql = "INSERT INTO Usuario (UsuarioNome, UsuarioEmail, UsuarioSenha) VALUES (@Nome, @Email, @Senha)";
+            string checkSql = "SELECT COUNT(*) FROM Usuario WHERE UsuarioEmail = @Email";
+            int count = await _db.ExecuteScalarAsync<int>(checkSql, new { Email = email });
 
-            return await _db.ExecuteAsync(sql, new {Nome = nome, Email = email, Senha = senha}) > 0;
+            if (count > 0)
+            {
+                // Usuário já existe
+                return false;
+            }
+
+            // Insere se não existe
+            string insertSql = "INSERT INTO Usuario (UsuarioNome, UsuarioEmail, UsuarioSenha) VALUES (@Nome, @Email, @Senha)";
+
+            return await _db.ExecuteAsync(insertSql, new {Nome = nome, Email = email, Senha = senha}) > 0;
+        }
+
+        public async Task<IEnumerable<Usuario>> ObterTodosUsuarios()
+        {
+            string sql = "SELECT * FROM Usuario";
+
+            var usuarios = await _db.QueryAsync<Usuario>(sql);
+
+            return usuarios;
         }
     }
 }
