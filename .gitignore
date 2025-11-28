@@ -1,4 +1,4 @@
-# Ignorar appsettings
-invencivelAPIoficial/appsettings.json
-invencivelAPIoficial/appsettings.*.json
-invencivelAPIoficial/appsettings.configuration.Development.json
+# Ignorar appsettingsz
+# invencivelAPIoficial/appsettings.json
+# invencivelAPIoficial/appsettings.*.json
+# invencivelAPIoficial/appsettings.configuration.Development.json
