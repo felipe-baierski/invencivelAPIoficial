@@ -13,6 +13,15 @@ namespace invencivelAPIoficial.Services
             _db = dbConnection;
         }
 
+        public async Task<Trem> ObterDadosPorNome(string nomeTrem)
+        {
+            var sql = "SELECT * FROM Trem WHERE Nome_trem = @Nome";
+
+            var tremNomes = await _db.QueryFirstOrDefaultAsync<Trem>(sql, new {Nome = nomeTrem});
+
+            return tremNomes;
+        }
+
         public async Task<List<string>> ObterTremNomesTrem()
         {
 
