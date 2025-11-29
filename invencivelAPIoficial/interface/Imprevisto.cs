@@ -1,7 +1,9 @@
-﻿namespace invencivelAPIoficial
+﻿using invencivelAPIoficial.Models;
+
+namespace invencivelAPIoficial
 {
     public interface Imprevisto
     {
-        Task<bool> UltimoCodigoAcidente();
+        Task<ImprevistoModel> UltimoCodigoAcidente();
     }
 }
