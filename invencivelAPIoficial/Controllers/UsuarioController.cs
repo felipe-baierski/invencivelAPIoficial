@@ -15,7 +15,7 @@ namespace invencivelAPIoficial.Controllers
         {
             this.usuarioInterface = usuarioInterface;
         }
-        [HttpPost]
+        [HttpPost("CadastroUsuario")]
         public async Task<IActionResult> CadastrarUsuario([FromBody] LoginRequest usuario)
         {
 
@@ -29,7 +29,6 @@ namespace invencivelAPIoficial.Controllers
             {
                 return Ok(new { mensagem = "Usuário já existente" });
             }
-
         }
 
         [HttpGet("ObterTodosUsuarios")]
