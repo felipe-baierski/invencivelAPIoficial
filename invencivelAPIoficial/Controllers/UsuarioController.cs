@@ -38,7 +38,7 @@ namespace invencivelAPIoficial.Controllers
             return Ok(usuarios);
         }
 
-        [HttpGet("Login")]
+        [HttpPost("Login")]
         public async Task<IActionResult> LoginUsuario([FromBody] LoginRequest usuario)
         {
             var loginSucesso = await usuarioInterface.LoginUsuario(usuario.UsuarioEmail, usuario.UsuarioSenha);
