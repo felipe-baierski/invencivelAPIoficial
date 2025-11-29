@@ -31,6 +31,17 @@ builder.Services.AddSingleton<IDbConnection>(sp =>
     return new MySqlConnection(connectionString);
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddScoped<Imprevisto, ImprevistoService>();
 
 builder.Services.AddScoped<TremInterface, TremService>();
@@ -38,6 +49,8 @@ builder.Services.AddScoped<TremInterface, TremService>();
 builder.Services.AddScoped<UsuarioInterface, UsuarioService>();
 
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
