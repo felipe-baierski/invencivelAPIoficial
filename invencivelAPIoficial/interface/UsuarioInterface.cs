@@ -8,6 +8,6 @@ namespace invencivelAPIoficial
 
         public Task<IEnumerable<Usuario>> ObterTodosUsuarios();
 
-        public Task<bool> LoginUsuario(string email, string senha, string nome);
+        public Task<bool> LoginUsuario(string email, string senha);
     }
 }
