@@ -23,7 +23,18 @@ namespace invencivelAPIoficial.Controllers
         public async Task<IActionResult> ObterDadosPorNome([FromQuery] string nomeTrem)
         {
             var trem = await tremInterface.ObterDadosPorNome(nomeTrem);
-            return Ok(trem);
+
+            if (trem == null)
+            {
+                return Ok(new {Message = "trem não registrado"});
+
+            }
+            else
+            {
+                return Ok(trem);
+
+            }
+
         }
 
     }
